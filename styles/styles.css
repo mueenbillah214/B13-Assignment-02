@@ -47,7 +47,7 @@ body {
     color: #aaa;
     text-decoration: none;
     transition: 0.3s;
-    font-weight: 500;
+    font-weight: 500px;
 }
 
 .nav-links a:hover {
@@ -385,7 +385,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: px;
     color: #FF318C;
     cursor: pointer;
     background: linear-gradient(135deg, #facc15, #ec4899);
@@ -493,4 +492,78 @@ body {
 .copyright {
     color: #475569;
     font-size: 14px;
+}
+/* Responsive Breakpoints  */
+
+/* 1. Large Devices (Desktop 993px) */
+@media (min-width: 993px) {
+    .features-grid {
+        grid-template-columns: 1.2fr 1fr 1fr;
+    }
+}
+
+/* 2. Medium Devices ( 992px) */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 20px 5%;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .large-feature {
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+
+    .episodes-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+/* 3. Small Devices (Up to 576px) */
+@media (max-width: 576px) {
+    .banner {
+        padding: 60px 15px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .cta-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid,
+    .episodes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .large-feature {
+        grid-column: span 1;
+    }
+
+    .host-card {
+        padding: 30px 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
