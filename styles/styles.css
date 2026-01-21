@@ -333,3 +333,128 @@ body {
 .icon-pink-small {
     color: #f472b6;
 }
+
+
+
+/* Featured Episodes */
+.episodes-section {
+    padding: 100px 8%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.episode-info img {
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+
+}
+
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.episode-card {
+    background: #160826;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #2d1b4d;
+    transition: 0.3s;
+}
+
+.episode-card:hover {
+    transform: translateY(-10px);
+}
+
+.thumbnail {
+    position: relative;
+    height: 200px;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: px;
+    color: #FF318C;
+    cursor: pointer;
+    background: linear-gradient(135deg, #facc15, #ec4899);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.episode-info {
+    padding: 25px;
+}
+
+.episode-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.episode-info p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
+
+.duration {
+    color: #4ade80;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Host Section */
+.host-section {
+    padding: 100px 8%;
+}
+
+.host-card {
+    background: rgba(45, 10, 85, 0.4);
+    border: 1px solid #3b2063;
+    display: flex;
+    padding: 50px;
+    border-radius: 30px;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.host-card img {
+    width: 220px;
+    border-radius: 20px;
+    filter: grayscale(30%);
+}
+
+.host-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+    font-size: 24px;
+    color: #94a3b8;
+    align-items: center;
+}
+
+
+
+.social-links i:hover {
+    color: #FF318C;
+    cursor: pointer;
+    transition: 0.3s;
+}
