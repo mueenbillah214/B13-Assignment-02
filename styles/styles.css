@@ -458,3 +458,39 @@ body {
     cursor: pointer;
     transition: 0.3s;
 }
+
+/* Footer */
+.footer {
+    position: relative;
+    background-image: url("./footer-bg.png");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding: 100px 20px 40px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #94a3b8;
+    margin: 40px 0;
+}
+
+.footer-hr {
+    width: 80%;
+    margin: 30px auto;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.copyright {
+    color: #475569;
+    font-size: 14px;
+}
